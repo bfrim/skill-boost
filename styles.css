@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -79,6 +80,17 @@ header a {
     }
 }
 
+
+
+.contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ;
+}
+
+
+
 .sidebar {
     height: 92vh;
     width: 25rem;
@@ -150,4 +162,30 @@ footer {
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+
+.right-side {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar {
+    width: 700px;
+    height: 500px;
+    border: 1px solid white;
+    /* border-radius: 0.8rem; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.calendar-cell {
+    width: 99px;
+    height: 99px;
+    border: 1px solid white;
+    padding: 0.7rem;
+    background-color: #2f2b3a;
 }

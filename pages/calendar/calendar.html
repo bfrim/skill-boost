@@ -11,46 +11,56 @@
     <div class="calendar-header">
         <a href="#"><h1>Skill Boost</h1></a>
     </div>
-    <div class="sidebar">
-        <div class="load">
-            <label id="file-label"><h1>Load from file:</h1></label>
-            <label id="error-message-label" style="color: red;"></label>
-            <input type="file" id="file-input"/>
+
+    <div class="contents">
+
+        <div class="sidebar">
+            <div class="load">
+                <label id="file-label"><h1>Load from file:</h1></label>
+                <label id="error-message-label" style="color: red;"></label>
+                <input type="file" id="file-input"/>
+            </div>
+            <button onclick="submitFile()"><h1>Submit</h1></button>
+            <button onclick="saveCalendar()">Save Calendar</button>
         </div>
-        <button onclick="submitFile()"><h1>Submit</h1></button>
-        <button onclick="saveCalendar()">Save Calendar</button>
-    </div>
-    <div class="calendar">
-        <div class="calendar-cell" id="1">1</div>
-        <div class="calendar-cell" id="2">2</div>
-        <div class="calendar-cell" id="3">3</div>
-        <div class="calendar-cell" id="4">4</div>
-        <div class="calendar-cell" id="5">5</div>
-        <div class="calendar-cell" id="6">6</div>
-        <div class="calendar-cell" id="7">7</div>
-        <div class="calendar-cell" id="8">8</div>
-        <div class="calendar-cell" id="9">9</div>
-        <div class="calendar-cell" id="10">10</div>
-        <div class="calendar-cell" id="11">11</div>
-        <div class="calendar-cell" id="12">12</div>
-        <div class="calendar-cell" id="13">13</div>
-        <div class="calendar-cell" id="14">14</div>
-        <div class="calendar-cell" id="15">15</div>
-        <div class="calendar-cell" id="16">16</div>
-        <div class="calendar-cell" id="17">17</div>
-        <div class="calendar-cell" id="18">18</div>
-        <div class="calendar-cell" id="19">19</div>
-        <div class="calendar-cell" id="20">20</div>
-        <div class="calendar-cell" id="21">21</div>
-        <div class="calendar-cell" id="22">22</div>
-        <div class="calendar-cell" id="23">23</div>
-        <div class="calendar-cell" id="24">24</div>
-        <div class="calendar-cell" id="25">25</div>
-        <div class="calendar-cell" id="26">26</div>
-        <div class="calendar-cell" id="27">27</div>
-        <div class="calendar-cell" id="28">28</div>
-        <div class="calendar-cell" id="29">29</div>
-        <div class="calendar-cell" id="30">30</div>
+
+
+        <div class="right-side">
+
+            <div class="calendar">
+                <div class="calendar-cell" id="1">1</div>
+                <div class="calendar-cell" id="2">2</div>
+                <div class="calendar-cell" id="3">3</div>
+                <div class="calendar-cell" id="4">4</div>
+                <div class="calendar-cell" id="5">5</div>
+                <div class="calendar-cell" id="6">6</div>
+                <div class="calendar-cell" id="7">7</div>
+                <div class="calendar-cell" id="8">8</div>
+                <div class="calendar-cell" id="9">9</div>
+                <div class="calendar-cell" id="10">10</div>
+                <div class="calendar-cell" id="11">11</div>
+                <div class="calendar-cell" id="12">12</div>
+                <div class="calendar-cell" id="13">13</div>
+                <div class="calendar-cell" id="14">14</div>
+                <div class="calendar-cell" id="15">15</div>
+                <div class="calendar-cell" id="16">16</div>
+                <div class="calendar-cell" id="17">17</div>
+                <div class="calendar-cell" id="18">18</div>
+                <div class="calendar-cell" id="19">19</div>
+                <div class="calendar-cell" id="20">20</div>
+                <div class="calendar-cell" id="21">21</div>
+                <div class="calendar-cell" id="22">22</div>
+                <div class="calendar-cell" id="23">23</div>
+                <div class="calendar-cell" id="24">24</div>
+                <div class="calendar-cell" id="25">25</div>
+                <div class="calendar-cell" id="26">26</div>
+                <div class="calendar-cell" id="27">27</div>
+                <div class="calendar-cell" id="28">28</div>
+                <div class="calendar-cell" id="29">29</div>
+                <div class="calendar-cell" id="30">30</div>
+            </div>
+        </div>
+
     </div>
 
     <script src="script.js"></script>

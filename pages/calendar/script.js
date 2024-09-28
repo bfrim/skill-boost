@@ -1,8 +1,4 @@
-function hello() {
-    console.log("hello")
-}
-
-function onSubmitFile() {
+function submitFile() {
     const fileLabel = document.getElementById("fileLabel")
     const file = document.getElementById("fileInput").files[0]
     const reader = new FileReader()

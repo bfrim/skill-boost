@@ -2,7 +2,7 @@ function hello() {
     console.log("hello")
 }
 
-async function onSubmitFile() {
+function onSubmitFile() {
     const fileLabel = document.getElementById("fileLabel")
     const file = document.getElementById("fileInput").files[0]
     const reader = new FileReader()

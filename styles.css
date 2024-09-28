@@ -103,7 +103,7 @@ header a {
     /* padding-top: 4.5rem; */
 }
 .sidebar button {
-    width: 23rem;
+    width: 19rem;
     background-color: transparent;
     border: 2px solid #a688fa;
     border-radius: 1rem;
@@ -174,8 +174,6 @@ footer {
 .calendar {
     width: 700px;
     height: 500px;
-    border: 1px solid white;
-    /* border-radius: 0.8rem; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;

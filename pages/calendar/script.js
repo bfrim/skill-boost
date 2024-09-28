@@ -1,3 +1,37 @@
+class CalendarEntry {
+    constructor(date, startTime, endTime, activity, notes) {
+        this.date = date
+        this.startTime = startTime
+        this.endTime = endTime
+        this.activity = activity
+        this.notes = notes
+    }
+}
+
+class Calendar {
+    constructor() {
+        this.entries = []
+    }
+
+    addEntry(entry) {
+        this.entries.push(entry)
+    }
+
+    removeEntry(entry) {
+        const ind = this.entries.indexOf(entry)
+
+        if (ind > -1) {
+            this.entries.splice(ind, 1)
+        }
+    }
+}
+
+const calendar = new Calendar()
+
+function updateView() {
+    
+}
+
 function submitFile() {
     const file = document.getElementById("file-input").files[0]
     
@@ -6,8 +40,7 @@ function submitFile() {
     }
     
     if (!file.name.endsWith(".skillboost")) {
-        const errorMessageLabel = document.getElementById("error-message-label")
-        errorMessageLabel.textContent = "You must submit a .skillboost file"
+        document.getElementById("error-message-label").textContent = "You must submit a .skillboost file"
         return
     }
     
@@ -16,7 +49,6 @@ function submitFile() {
 
     reader.onload = () => {
         const calendar = JSON.parse(reader.result)
-        console.log(calendar.entries)
     }
 }
 
@@ -35,5 +67,36 @@ function saveFileLocally(data, fileName, type) {
 }
 
 function saveCalendar() {
-    saveFileLocally("hello there", "hello.txt", "text/plain")
+    saveFileLocally(
+        JSON.stringify(calendar),
+        "calendar.skillboost",
+        "text/plain"
+    )
+}
+
+function addEntry() {
+    const date = document.getElementById("date-input").value
+    if (!date) {
+        return
+    }
+
+    const startTime = document.getElementById("start-time-input").value
+    if (!startTime) {
+        return
+    }
+
+    const endTime = document.getElementById("end-time-input").value
+    if (!endTime) {
+        return
+    }
+
+    const activity = document.getElementById("activity-input").value
+    if (!activity) {
+        return
+    }
+
+    const notes = document.getElementById("notes-input").value
+
+    calendar.addEntry(new CalendarEntry(date, startTime, endTime, activity, notes))
+    console.log(calendar.entries)
 }

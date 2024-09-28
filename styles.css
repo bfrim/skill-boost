@@ -38,7 +38,42 @@ header a {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 3rem;
+    /* gap: 3rem; */
     margin: 0 1rem;
+    font-size: 1.5rem;
+}
+.inner-cover button {
+    background-color: transparent;
+    border: 2px solid #a688fa;
+    border-radius: 1rem;
+    padding: 1rem 2.5rem;
+    color: white;
+    transition: 150ms;
+}
+.inner-cover button:hover {
+    cursor: pointer;
+    background-color: #a688fa;
+    color: black;
+}
+.cover-p {
+    width: 50%;
+}
+.cover-button {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+@media only screen and (max-width: 950px) {
+    .inner-cover {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .cover-p {
+        width: 100%;
+    }
+    .cover-button {
+        width: 100%;
+        justify-content: center;
+    }
 }

@@ -11,7 +11,7 @@ function onSubmitFile() {
         return
     }
 
-    if (!file.name.endsWith('.skillboost')) {
+    if (!file.name.endsWith(".skillboost")) {
         fileLabel.textContent = "You must submit a .skillboost file"
         return
     }

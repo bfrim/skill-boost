@@ -80,7 +80,7 @@ header a {
 }
 
 .sidebar {
-    min-height: 100vh;
+    height: 92vh;
     width: 25rem;
     background-color: #2f2b3a;
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.253);
@@ -88,6 +88,7 @@ header a {
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    /* padding-top: 4.5rem; */
 }
 .sidebar button {
     width: 23rem;
@@ -130,4 +131,23 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.calendar-header {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1rem 0; */
+    background-color: #1a1625;
+    /* backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
+    border-bottom: 1px solid #3d315d;
+}
+.calendar-header a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }

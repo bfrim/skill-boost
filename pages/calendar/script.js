@@ -1,5 +1,5 @@
 function submitFile() {
-    const fileLabel = document.getElementById("fileLabel")
+    const errorMessageLabel = document.getElementById("errorMessageLabel")
     const file = document.getElementById("fileInput").files[0]
     const reader = new FileReader()
 
@@ -8,7 +8,7 @@ function submitFile() {
     }
 
     if (!file.name.endsWith(".skillboost")) {
-        fileLabel.textContent = "You must submit a .skillboost file"
+        errorMessageLabel.textContent = "You must submit a .skillboost file"
         return
     }
 

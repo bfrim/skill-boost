@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skill Boost</title>
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" href="../../images/favicon.ico">
 </head>
 <body>
     <div class="sidebar">
         <div class="load">
             <label id="fileLabel"><h1>Load from file:</h1></label>
+            <label id="errorMessageLabel" style="color: red;"></label>
             <input type="file" id="fileInput"/>
         </div>
         <button onclick="submitFile()"><h1>Submit</h1></button>

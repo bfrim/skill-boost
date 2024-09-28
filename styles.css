@@ -121,3 +121,13 @@ header a {
 .load h1 {
     margin-top: 0;
 }
+
+footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

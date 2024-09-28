@@ -19,7 +19,7 @@ header {
     background-color: #1a162550;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid #292632;
+    border-bottom: 1px solid #3d315d;
 }
 header a {
     text-decoration: none;
@@ -34,12 +34,12 @@ header a {
     min-height: 100vh;
 }
 .inner-cover {
-    width: 70rem;
+    width: 60rem;
     display: flex;
     align-items: center;
     justify-content: center;
     /* gap: 3rem; */
-    margin: 0 1rem;
+    margin: 0 2rem;
     font-size: 1.5rem;
 }
 .inner-cover button {
@@ -68,6 +68,7 @@ header a {
     .inner-cover {
         flex-direction: column;
         gap: 3rem;
+        margin: 0 1rem;
     }
     .cover-p {
         width: 100%;

@@ -1,5 +1,5 @@
 class CalendarEntry {
-    constructor (startDate, endDate, activity, notes) {
+    constructor(startDate, endDate, activity, notes) {
         this.startDate = startDate
         this.endDate = endDate
         this.activity = activity

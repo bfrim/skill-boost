@@ -16,9 +16,9 @@ header {
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-    background-color: #1a162550;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: #1a1625;
+    /* backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
     border-bottom: 1px solid #3d315d;
 }
 header a {
@@ -77,4 +77,28 @@ header a {
         width: 100%;
         justify-content: center;
     }
+}
+
+.sidebar {
+    min-height: 100vh;
+    width: 22rem;
+    background-color: #2f2b3a;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.253);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.load {
+    background-color: #46424f;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }

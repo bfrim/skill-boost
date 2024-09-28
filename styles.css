@@ -40,3 +40,8 @@ header button:hover {
     cursor: pointer;
     color: black;
 } */
+
+.cover {
+    display: flex;
+    align-items: center;
+}

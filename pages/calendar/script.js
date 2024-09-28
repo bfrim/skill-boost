@@ -19,3 +19,21 @@ function submitFile() {
         console.log(calendar.entries)
     }
 }
+
+function saveFileLocally(data, fileName, type) {
+    let file = new Blob([data], {type})
+    let a = document.createElement("a")
+    let url = URL.createObjectURL(file)
+    a.href = url
+    a.download = fileName
+    document.body.appendChild(a)
+    a.click()
+    setTimeout(() => {
+        document.body.removeChild(a)
+        URL.revokeObjectURL(url)
+    }, 0)
+}
+
+function saveCalendar() {
+    saveFileLocally("hello there", "hello.txt", "text/plain")
+}

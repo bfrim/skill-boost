@@ -17,8 +17,7 @@ body {
 }
 
 header {
-    width: inherit;
-    position: fixed;
+    position: sticky;
     padding: 1rem 0;
     display: flex;
     align-items: center;
@@ -28,32 +27,16 @@ header a {
     text-decoration: none;
     color: white;
 }
-
-.cover {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-.inner-cover {
-    max-width: 50rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 3rem;
-}
-.cover button {
+/* header button {
     background-color: transparent;
-    color: white;
     border: 2px solid #a688fa;
-    border-radius: 5rem;
+    border-radius: 1rem;
     padding: 0.5rem 2rem;
-    transition: 150ms;
+    color: white;
+    transition: 200ms;
 }
-.cover button:hover {
+header button:hover {
     background-color: #a688fa;
     cursor: pointer;
     color: black;
-}
-
+} */

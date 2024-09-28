@@ -1,6 +1,6 @@
 function submitFile() {
-    const errorMessageLabel = document.getElementById("errorMessageLabel")
-    const file = document.getElementById("fileInput").files[0]
+    const errorMessageLabel = document.getElementById("error-message-label")
+    const file = document.getElementById("file-input").files[0]
     const reader = new FileReader()
 
     if (!file) {
